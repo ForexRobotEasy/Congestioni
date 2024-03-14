@@ -1,0 +1,74 @@
+mql5
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                   Congestioni Indicator                          |
+//|                                                                  |
+//|                                                                  |
+//| Developer's Site: forexroboteasy.com                             |
+//| Development: Forex Robot Easy Team                               |
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+
+#property copyright 'forexroboteasy.com'
+#property link      'forexroboteasy.com'
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//| Expert initialization function                                   |
+//|                                                                  |
+//+------------------------------------------------------------------+
+int OnInit()
+{
+    // Add initialization code here
+
+    return(INIT_SUCCEEDED);
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//| Expert deinitialization function                                 |
+//|                                                                  |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+{
+    // Add deinitialization code here
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//| Expert tick function                                             |
+//|                                                                  |
+//+------------------------------------------------------------------+
+void OnTick()
+{
+    // Add tick function code here
+
+    // Check for new trading ranges
+    if (IsNewTradingRange()) {
+        AlertUser(); // Alert the user through visible and audible alerts
+    }
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//| Function to check for new trading ranges                          |
+//|                                                                  |
+//+------------------------------------------------------------------+
+bool IsNewTradingRange()
+{
+    // Add code to check for new trading ranges here
+    // Return true if a new trading range is identified, otherwise false
+    return false;
+}
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//| Function to alert the user through visible and audible alerts     |
+//|                                                                  |
+//+------------------------------------------------------------------+
+void AlertUser()
+{
+    // Add code to alert the user here
+}
+
